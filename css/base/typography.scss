@@ -1,0 +1,74 @@
+/* typography.scss */
+
+$font: 'Manrope', sans-serif;
+$veryDarkGrayishBlue: hsl(217, 19%, 35%);
+$desaturatedDarkBlue: hsl(214, 17%, 51%);
+
+
+body {
+    font-family: $font;
+}
+
+.main-title {
+color: $veryDarkGrayishBlue;
+font-weight: 700;
+font-size: 22px;
+@include media-breakpoint-up(md){
+  font-size: 26px;
+}
+@include media-breakpoint-up(lg){
+    font-size: 24px;
+  }
+}
+
+.main-text {
+    color: $veryDarkGrayishBlue;
+    font-weight: 500;
+    font-size: 20px;
+    @include media-breakpoint-up(md){
+        font-size: 24px;
+      }
+    @include media-breakpoint-up(lg){
+        font-size: 16px;
+      }
+}
+
+.name {
+    color: $veryDarkGrayishBlue;
+    font-weight: 700;
+    font-size: 18px;
+    @include media-breakpoint-up(md){
+        font-size: 22px;
+      }
+      @include media-breakpoint-up(lg){
+        font-size: 16px;
+      }
+}
+
+.mainDate {
+    color: $veryDarkGrayishBlue;
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 10px;
+    @include media-breakpoint-up(md){
+        font-size: 20px;
+      }
+      @include media-breakpoint-up(lg){
+        font-size: 16px;
+        margin-top: 0;
+      }
+      @include media-breakpoint-up(xl){
+        margin-top: 30px;
+      }
+}
+
+.myShareText {
+    color: $desaturatedDarkBlue;
+    text-transform: uppercase;
+    padding: 3px; 
+    @include media-breakpoint-up(lg){ 
+    margin-top: 15px;
+    margin-left: 5px;
+    font-size: 20px;
+    }
+}

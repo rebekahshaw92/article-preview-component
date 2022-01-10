@@ -1,0 +1,177 @@
+/* body.scss */
+
+$veryDarkGrayishBlue: hsl(217, 19%, 35%);
+$desaturatedDarkBlue: hsl(214, 17%, 51%);
+$ightGrayishBlue: hsl(210, 46%, 95%);
+
+.main-card {
+    @include media-breakpoint-up(lg){
+        display: flex;
+    }
+    @include media-breakpoint-up(xl){
+    width: 90%;
+    }
+    border: 1px;
+    background-color: #fff;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+
+.main-img-left {
+    width: 500px;
+    height: 300px;
+    @include media-breakpoint-up(md){
+    width: 650px;
+    height: 400px;
+    }
+
+    @include media-breakpoint-up(lg){
+    width: 400px;
+    height: 350px;
+    }
+    @include media-breakpoint-up(xl){
+    height: 400px;
+    }
+}
+
+.main-title {
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.main-text {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+
+.img-left {
+    height: 50px;
+    width: 50px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    @include media-breakpoint-up(md){
+        height: 80px;
+        width: 80px;
+      }
+      @include media-breakpoint-up(lg){
+        height: 40px;
+        width: 40px;
+        margin-top: 0;
+      }
+    @include media-breakpoint-up(xl){
+    height: 60px;
+    width: 60px;
+    margin-left: 20px;
+    margin-top: 20px;
+    }
+}
+
+.name {
+    margin-top: -20px;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+.img-right {
+    margin-top: 25px;
+    width: 20px;
+    height: 20px;
+    margin-left: -50px;
+    border-radius: 50%;
+    display: flex;
+    cursor: pointer;
+    background-color: $ightGrayishBlue;
+    position: absolute;
+    z-index: 1;
+    border-radius: 100%;
+    &:hover {
+        background-color: $veryDarkGrayishBlue;
+    }
+    @include media-breakpoint-up(lg){
+        margin-top: 5px;
+    }
+      @include media-breakpoint-up(md){
+        height: 20px;
+        width: 20px;
+        margin-top: 10px;
+      }
+      @include media-breakpoint-up(xl){
+        margin-top: 45px;
+      }
+}
+
+
+.popup {
+    position: relative;
+    cursor: pointer;
+ .popuptext {
+    visibility: hidden;
+    background-color: #48556a;
+    display: flex;
+    position: absolute;
+    letter-spacing: 3px; 
+    align-items: center;
+    height: 64px;
+    width: 465px; 
+    height: 100px;
+    bottom: -22px;
+    right: -32px;
+    box-shadow: unset;
+    border-radius: 0px 0px 15px 15px;
+    padding: 10px 30px 10px 30px;
+
+    @include media-breakpoint-up(md){
+        width: 640px; 
+    height: 130px;
+      }
+    @include media-breakpoint-up(lg){ 
+    width: 205px; 
+    height: 50px;
+    border-radius: 6px;
+    padding: 8px 0;
+    z-index: 1;
+    bottom: 80%;
+    left: -70%;
+    top: -50px;
+&::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    margin-left: -5px;
+    top: 100%;
+    border-width: 5px;
+    border-style: solid;
+    display: block;
+    border-color: #48556a transparent transparent transparent;
+}
+    }
+    @include media-breakpoint-up(xl){ 
+            width: 230px; 
+            top: -20px;
+    }
+
+}
+ .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+   img {
+    padding: 1px;
+    margin-left: 10px; 
+    @include media-breakpoint-up(lg){
+    float: right; 
+    }
+  }
+  .img-facebook, .img-twitter, .img-pinterest {
+      margin-top: -20px;
+      @include media-breakpoint-up(lg){
+        margin-top: 0;
+        }
+  }
+}
